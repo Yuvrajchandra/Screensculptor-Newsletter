@@ -1,0 +1,156 @@
+body {
+  /* background-image:  */
+  font-family: 'Montserrat', sans-serif;
+  background: no-repeat center fixed;
+  object-fit: cover;
+  background-size: cover;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  margin: 20px;
+  vertical-align: middle;
+  animation: logo-load 300ms ease-in 300ms;
+}
+
+.logoText {
+  font-size: 120%;
+  color: #fff;
+}
+
+
+.middle-image{
+  padding-top: 50px;
+  align-items: center;
+  height: 9.375rem;
+  width: 9.375rem;
+  display: block;
+  margin: auto;
+  animation: middle-image-load 300ms ease-in 800ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.thanks-text {
+  margin-top: 60px;
+  text-align: center;
+  color: white;
+}
+
+.subscribed-text {
+  text-align: center;
+  color: white;
+  opacity: 0.6;
+  /* animation: middle-image-load 300ms ease-in 800ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px); */
+  /* opacity: 0; */
+}
+
+@media (max-width: 1024px) {
+  .main-body{
+    margin-top: 300px;
+  }
+}
+
+/* .footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 140px;
+
+  margin-bottom: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer-text {
+  padding-left: 10px;
+  padding-top: 20px;
+  text-align: left;
+  font-size: 75%;
+}
+
+.instagram {
+  height: 40px;
+  width: 40px;
+  margin: 20px;
+  vertical-align: middle;
+} */
+
+
+.footer{
+position: fixed;
+width: 100%;
+height: 10%;
+/* margin-top: 10%; */
+/* padding-bottom: 0; */
+bottom: 0;
+margin: 0px;
+padding: 0px;
+background-color: black;
+color: white;
+text-align: center;
+}
+
+.footer-text{
+  /* padding-left: 10px;
+  padding-top: 20px; */
+  text-align: left;
+  font-size: 0.7rem;
+  margin-top: 0px;
+}
+
+.instagram{
+  height: 40px;
+  width: 40px;
+  margin: 20px;
+  vertical-align: middle;
+}
+
+
+@keyframes logo-load {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes middle-image-load {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .logoText {
+    display: none;
+  }
+  .instagram{
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+}
+
+/*
+  @media (max-width: 500px) {
+    .logoText{
+      display: none;
+    }
+  } */
